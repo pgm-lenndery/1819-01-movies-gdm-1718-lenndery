@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/avenir-medium.ttf'); /* IE9 Compat Modes */
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/avenir-heavy.ttf'); /* IE9 Compat Modes */
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('../fonts/avenir-black.ttf'); /* IE9 Compat Modes */
+    font-weight: 900;
+}
