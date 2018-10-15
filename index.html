@@ -9,195 +9,265 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="plugins/colorify/colorify.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed:400,500,600,700" rel="stylesheet">
 
     <title>It's all about movies</title>
   </head>
-  <body>
-    <nav id="titlebar" class="navbar">
-        <a class="navbar-brand" href="#"><i style="margin-right: 9px; display: none;" class="fas fa-play"></i><i class="material-icons">local_play</i>Favorite movies</a>
+  <body data-spy="scroll" data-target="#main-nav" data-offset="76">
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-light fixed-top">
+      <a class="navbar-brand" href="#"><i class="material-icons">local_play</i><span>favorite movies</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#kingsman_secret_service">Kingsman: The Secret Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kingsman_golden_circle">Kingsman: The Golden Circle</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#spiderman_homecoming">Spiderman: Homecoming</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#capam_first_avenger">Captain America:<br class="break-sm">The First Avenger</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hacker">Hacker</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ready_player_one">Ready Player One</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <nav id="navbar-scroll" class="navbar">
-      <ul class="nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="#kingsman_secret_service" data-placement="auto" data-toggle="tooltip" title="Secret Service"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#kingsman_golden_circle" data-placement="auto" data-toggle="tooltip" title="Golden Circle"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#capam_first_avenger" data-placement="auto" data-toggle="tooltip" title="Captain America"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#ready_player_one" data-placement="auto" data-toggle="tooltip" title="Ready Player One"></a>
-        </li>
-      </ul>
-    </nav>
-    <div class="container-movies" data-spy="scroll" data-target="#navbar-scroll">
-      <div id="kingsman_secret_service" class="container movie" style="background-image: url(images/kingsman_secret_service.jpg)">
-        <div class="container"> 
-          <div class="row">
-            <div class="col-12 cover">
-              <img src="images/kingsman_secret_service.jpg">
-              <img id="gradient" src="images/cover_gradient.svg">
-            </div>
-  
-            <div class="col movie-data">
-              <h1>Kingsman:<br> The Secret Service</h1>
-              <p><span class="year">2014</span> &nbsp — &nbsp actie, avontuur, comedy</p>
-              <dl><p>regisseur</p>
-                <dt>Matthew Vaughn</dt>
-              </dl>
-  
-              <dl><p>cast</p>
-                <dt>Colin Firth</dt>
-                <dt>Taron Egerton</dt>
-                <dt>Samuel L. Jackson</dt>
-              </dl>
-    
-              <div id="about"><p>over</p>
-                <div class="collapse" id="movieDescription">
-                  <p>
-                      Kingsman, een geheim genootschap van agenten, recruteerd een aantal jongeren waaronder de zoon van een oud-Kingsman agent. Tijdens de training van de recruten worden ze geconfronteerd met multimilardair met een gestoord plan.
-                      Kingsman, een geheim genootschap van agenten, recruteerd een aantal jongeren waaronder de zoon van een oud-Kingsman agent. Tijdens de training van de recruten worden ze geconfronteerd met multimilardair met een gestoord plan.
-                  </p>
-                </div>
-                <button class="read-more" type="button" data-toggle="collapse" data-target="#movieDescription" aria-expanded="false" aria-controls="movieDescription">
-                  lezen
-                </button>
+
+    <div class="container">
+      <div class="card-columns">
+        <div id="kingsman_secret_service" class="card">
+          <div class="cover">
+            <img class="poster" src="images/kingsman_secret_service.jpg">
+            <img id="gradient" src="images/cover_gradient.svg">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Kingsman: The Secret Service</h5>
+            <p class="card-meta"><span class="year">2014</span> &nbsp; — &nbsp; actie, avontuur, comedy</p>
+            
+            <dl><p class="subtitle">regisseur</p>
+              <dt>Matthew Vaughn</dt>
+            </dl>
+
+            <dl><p class="subtitle">cast</p>
+              <dt>Colin Firth</dt>
+              <dt>Taron Egerton</dt>
+              <dt>Samuel L. Jackson</dt>
+            </dl>
+
+            <div class="about"><p class="subtitle">over</p>
+              <div class="collapse collapsing" id="collapse-hacker">
+                <p>
+                  Kingsman, een geheim genootschap van agenten, recruteerd een aantal jongeren waaronder de zoon van een oud-Kingsman agent. Tijdens de training van de recruten worden ze geconfronteerd met multimilardair met een gestoord plan.
+                </p>
               </div>
-              <button class="buy">in winkelmandje</button>
+              <button class="read-more" type="button" data-toggle="collapse" data-target="#collapse-hacker" aria-expanded="false" aria-controls="collapse-hacker">
+                lezen
+              </button>
             </div>
+            <button class="buy">in winkelmandje</button>
           </div>
         </div>
-      </div>
-  
-      <div id="kingsman_golden_circle" class="container movie" style="background-image: url(images/kingsman_golden_circle.jpg)">
-        <div class="container"> 
-          <div class="row">
-            <div class="col-12 cover">
-              <img src="images/kingsman_golden_circle.jpg">
-              <img id="gradient" src="images/cover_gradient.svg">
-            </div>
-  
-            <div class="col movie-data">
-              <h1>Kingsman:<br> The Golden Circle</h1>
-              <p><span class="year">2017</span> &nbsp — &nbsp actie, avontuur, comedy</p>
-              <dl><p>regisseur</p>
-                <dt>Matthew Vaughn</dt>
-              </dl>
-  
-              <dl><p>cast</p>
-                <dt>Colin Firth</dt>
-                <dt>Taron Egerton</dt>
-                <dt>Channing Tatum</dt>
-              </dl>
-    
-              <div id="about"><p>over</p>
-                <div class="collapse" id="collapse-kingsman-golden-circle">
-                  <p>
+        
+        <div id="kingsman_golden_circle" class="card">
+          <div class="cover">
+            <img class="poster" src="images/kingsman_golden_circle.jpg">
+            <img id="gradient" src="images/cover_gradient.svg">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Kingsman: The Golden Circle</h5>
+            <p class="card-meta"><span class="year">2017</span> &nbsp; — &nbsp; crime, drama, thriller</p>
+            
+            <dl><p class="subtitle">regisseur</p>
+              <dt>Matthew Vaughn</dt>
+            </dl>
+
+            <dl><p class="subtitle">cast</p>
+              <dt>Colin Firth</dt>
+              <dt>Taron Egerton</dt>
+              <dt>Channing Tatum</dt>
+            </dl>
+
+            <div class="about"><p class="subtitle">over</p>
+              <div class="collapse collapsing" id="collapse-kingsman-golden-circle">
+                <p>
                     When their headquarters are destroyed and the world is held hostage, the Kingsman's journey leads them to the discovery of an allied spy organization in the United States. These two elite secret organizations must band together to defeat a common enemy.
-                  </p>
-                </div>
-                <button class="read-more" type="button" data-toggle="collapse" data-target="#collapse-kingsman-golden-circle" aria-expanded="false" aria-controls="collapse-kingsman-golden-circle">
-                  lezen
-                </button>
+                </p>
               </div>
-              <button class="buy">in winkelmandje</button>
+              <button class="read-more" type="button" data-toggle="collapse" data-target="#collapse-kingsman-golden-circle" aria-expanded="false" aria-controls="collapse-kingsman-golden-circle">
+                lezen
+              </button>
             </div>
+            <button class="buy">in winkelmandje</button>
           </div>
         </div>
+
+        <div id="spiderman_homecoming" class="card">
+          <div class="cover">
+            <img class="poster" src="images/spiderman_homecoming.jpg">
+            <img id="gradient" src="images/cover_gradient.svg">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Spiderman: Homecoming</h5>
+            <p class="card-meta"><span class="year">2017</span> &nbsp; — &nbsp; action, adventure, sci-fi</p>
+            
+            <dl><p class="subtitle">regisseur</p>
+              <dt>Jon Watts</dt>
+            </dl>
+
+            <dl><p class="subtitle">cast</p>
+              <dt>Tom Holland</dt>
+              <dt>Michael Keaton</dt>
+              <dt>Robert Downey Jr.</dt>
+            </dl>
+
+            <div class="about"><p class="subtitle">over</p>
+              <div class="collapse collapsing" id="collapse-spiderman-homecoming">
+                <p>
+                    Peter Parker balances his life as an ordinary high school student in Queens with his superhero alter-ego Spider-Man, and finds himself on the trail of a new menace prowling the skies of New York City.
+                </p>
+              </div>
+              <button class="read-more" type="button" data-toggle="collapse" data-target="#collapse-spiderman-homecoming" aria-expanded="false" aria-controls="collapse-spiderman-homecoming">
+                lezen
+              </button>
+            </div>
+            <button class="buy">in winkelmandje</button>
+          </div>
+        </div>
+
+        <div id="capam_first_avenger" class="card">
+          <div class="cover">
+            <img class="poster" src="images/capam_first_avenger.jpg">
+            <img id="gradient" src="images/cover_gradient.svg">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Captain America:<br class="break-md"> The First Avenger</h5>
+            <p class="card-meta"><span class="year">2011</span> &nbsp; — &nbsp; actie, avontuur, sci-fi</p>
+            
+            <dl><p class="subtitle">regisseur</p>
+              <dt>Joe Johnston</dt>
+            </dl>
+
+            <dl><p class="subtitle">cast</p>
+              <dt>Chris Evans</dt>
+              <dt>Hugo Weaving</dt>
+              <dt>Samuel L. Jackson</dt>
+            </dl>
+
+            <div class="about"><p class="subtitle">over</p>
+              <div class="collapse collapsing" id="collapse-capam-first-avenger">
+                <p>
+                    Steve Rogers, a rejected military soldier transforms into Captain America after taking a dose of a "Super-Soldier serum". But being Captain America comes at a price as he attempts to take down a war monger and a terrorist organization.
+                </p>
+              </div>
+              <button class="read-more" type="button" data-toggle="collapse" data-target="#collapse-capam-first-avenger" aria-expanded="false" aria-controls="collapse-capam-first-avenger">
+                lezen
+              </button>
+            </div>
+            <button class="buy">in winkelmandje</button>
+          </div>
+        </div>
+
+        <div id="hacker" class="card">
+          <div class="cover">
+            <img class="poster" src="images/hacker.jpg">
+            <img id="gradient" src="images/cover_gradient.svg">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Hacker</h5>
+            <p class="card-meta"><span class="year">2016</span> &nbsp; — &nbsp; crime, drama, thriller</p>
+            
+            <dl><p class="subtitle">regisseur</p>
+              <dt>Akan Satayev</dt>
+            </dl>
+
+            <dl><p class="subtitle">cast</p>
+              <dt>Callan McAuliffe</dt>
+              <dt>Lorraine Nicholson</dt>
+              <dt>Daniel Eric Gold</dt>
+            </dl>
+
+            <div class="about"><p class="subtitle">over</p>
+              <div class="collapse collapsing" id="movieDescription">
+                <p>
+                  With the help of his new friends Alex Danyliuk turns to a life of crime and identity theft.
+                </p>
+              </div>
+              <button class="read-more" type="button" data-toggle="collapse" data-target="#movieDescription" aria-expanded="false" aria-controls="movieDescription">
+                lezen
+              </button>
+            </div>
+            <button class="buy">in winkelmandje</button>
+          </div>
+        </div>
+
+        <div id="ready_player_one" class="card">
+          <div class="cover">
+            <img class="poster" src="images/ready_player_one.jpg">
+            <img id="gradient" src="images/cover_gradient.svg">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Ready Player One</h5>
+            <p class="card-meta"><span class="year">2018</span> &nbsp; — &nbsp;  actie, avontuur, sci-fi</p>
+            
+            <dl><p class="subtitle">regisseur</p>
+              <dt>Steven Spielberg</dt>
+            </dl>
+
+            <dl><p class="subtitle">cast</p>
+              <dt>Tye Sheridan</dt>
+              <dt>Olivia Cooke</dt>
+              <dt>Ben Mendelsohn</dt>
+            </dl>
+
+            <div class="about"><p class="subtitle">over</p>
+              <div class="collapse collapsing" id="collapse-ready-layer-one">
+                <p>
+                    Steve Rogers, a rejected military soldier transforms into Captain America after taking a dose of a "Super-Soldier serum". But being Captain America comes at a price as he attempts to take down a war monger and a terrorist organization.
+                </p>
+              </div>
+              <button class="read-more" type="button" data-toggle="collapse" data-target="#collapse-ready-layer-one" aria-expanded="false" aria-controls="collapse-ready-layer-one">
+                lezen
+              </button>
+            </div>
+            <button class="buy">in winkelmandje</button>
+          </div>
+        </div>
+
       </div>
-  
-      <div id="capam_first_avenger" class="container movie" style="background-image: url(images/capam_first_avenger.jpg)">
-        <div class="container"> 
-          <div class="row">
-            <div class="col-12 cover">
-              <img src="images/capam_first_avenger.jpg">
-              <img id="gradient" src="images/cover_gradient.svg">
-            </div>
-  
-            <div class="col movie-data">
-              <h1>Captain America:<br>The First Avenger</h1>
-              <p><span class="year">2011</span> &nbsp — &nbsp action, adventure, sci-fi</p>
-              <dl><p>regisseur</p>
-                <dt>Joe Johnston</dt>
-              </dl>
-  
-              <dl><p>cast</p>
-                <dt>Chris Evans</dt>
-                <dt>Hugo Weaving</dt>
-                <dt>Samuel L. Jackson</dt>
-              </dl>
-    
-              <div id="about"><p>over</p>
-                <div class="collapse" id="collapse-capam-first-avenger">
-                  <p>
-                      Steve Rogers, a rejected military soldier transforms into Captain America after taking a dose of a "Super-Soldier serum". But being Captain America comes at a price as he attempts to take down a war monger and a terrorist organization.
-                  </p>
-                </div>
-                <button class="read-more" type="button" data-toggle="collapse" data-target="#collapse-capam-first-avenger" aria-expanded="false" aria-controls="collapse-capam-first-avenger">
-                  lezen
-                </button>
-              </div>
-              <button class="buy">in winkelmandje</button>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <div id="ready_player_one" class="container movie" style="background-image: url(images/ready_player_one.jpg)">
-        <div class="container"> 
-          <div class="row">
-            <div class="col-12 cover">
-              <img src="images/ready_player_one.jpg">
-              <img id="gradient" src="images/cover_gradient.svg">
-            </div>
-  
-            <div class="col movie-data">
-              <h1>Ready Player One</h1>
-              <p><span class="year">2018</span> &nbsp — &nbsp actie, avontuur, sci-fi</p>
-              <dl><p>regisseur</p>
-                <dt>Steven Spielberg</dt>
-              </dl>
-  
-              <dl><p>cast</p>
-                <dt>Tye Sheridan</dt>
-                <dt>Olivia Cooke</dt>
-                <dt>Ben Mendelsohn</dt>
-              </dl>
-    
-              <div id="about"><p>over</p>
-                <div class="collapse" id="collapse-ready-layer-one">
-                  <p>
-                      When the creator of a virtual reality world called the OASIS dies, he releases a video in which he challenges all OASIS users to find his Easter Egg, which will give the finder his fortune.
-                  </p>
-                </div>
-                <button class="read-more" type="button" data-toggle="collapse" data-target="#collapse-ready-layer-one" aria-expanded="false" aria-controls="collapse-ready-layer-one">
-                  lezen
-                </button>
-              </div>
-              <button class="buy">in winkelmandje</button>
-            </div>
-          </div>
-        </div>
+    </div>
+
+    <!-- VERSIE 2
       </div>
 
       <footer>
         <img id="logo-ahs" src="images/logo_ahs_wit.svg" height="20px"><span>Lennert De Ryck</span>
-      </footer>
-    </div>
+      </footer> 
+    -->
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
+      <!-- Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip(); 
         });
-        </script>
+      </script>
+      <!--http://colorify.rocks/demo.html-->
   </body>
 </html>
