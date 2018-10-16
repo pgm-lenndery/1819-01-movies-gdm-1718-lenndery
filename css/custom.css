@@ -24,6 +24,37 @@ body {
     padding-right: 5px;
 }
 
+footer {
+    margin: auto;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    border-radius: var(--radius);
+    background: var(--accent-1);
+    margin: 20px 0px 0px 0px;
+    padding: 15px;
+    vertical-align: middle;
+}
+
+footer > div > #logo-ahs {
+    margin-right: 20px;
+}
+
+footer > div > div {
+    align-self: center;
+    color: white;
+    font-family: var(--font-main);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    transform: translateY(7px);
+}
+
 /* NAV */
 .navbar {
     margin: 20px 20px 0px 20px;
@@ -179,10 +210,6 @@ dt {
     opacity: 0.8;
 }
 
-.about {
-    max-width: 400px;
-}
-
 .about p {
     margin-bottom: 0px;
 }
@@ -245,15 +272,18 @@ button.read-more {
 
 .about .collapse.show::after {
     width: 0px;
+    transition: width .35s ease;
 }
 
 .about .collapse:not(.show) {
     display: block;
     height: 50px;
+    transition: width .35s ease;
 }
 
 .about .collapsing {
     height: 50px;
+
 }
 
 /* BUTTON BUY */
@@ -296,6 +326,10 @@ button.buy:hover {
 }
 
 @media (min-width: 992px) {
+    footer {
+        width: 100%;
+    }
+
     /* BR */
     .break-md {
         display: initial;
