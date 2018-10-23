@@ -86,7 +86,7 @@ footer > div > div {
     color: black;
 }
 
-.nav-link {
+.navbar-light .navbar-nav .nav-link  {
     color: black;
 }
 
