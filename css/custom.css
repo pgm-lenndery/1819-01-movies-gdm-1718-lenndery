@@ -1,5 +1,6 @@
 :root {
-    --accent-1: #262626;
+    --accent-1: #1a1a1a;
+    --accent-2: #262626;
     --font-main: 'Avenir';
     --font-2: 'Fira Sans Condensed';
     --radius: 4.5px;
@@ -11,13 +12,13 @@
 
 html {
     scroll-behavior: smooth !important;
-    background: #1a1a1a;
+    background: var(--accent-1);
 }
 
 body {
     position: relative;
     scroll-behavior: smooth !important;
-    background: #1a1a1a;
+    background: var(--accent-1);
     padding-top: calc(56px + 20px);
     padding-bottom: 20px;
     padding-left: 5px;
@@ -34,7 +35,7 @@ footer > div {
     align-content: center;
     align-items: center;
     border-radius: var(--radius);
-    background: var(--accent-1);
+    background: var(--accent-2);
     margin: 20px 0px 0px 0px;
     padding: 15px;
     vertical-align: middle;
@@ -52,7 +53,7 @@ footer > div > div {
     letter-spacing: 2px;
     font-size: 0.9rem;
     font-weight: 800;
-    transform: translateY(7px);
+    transform: translateY(6px);
 }
 
 /* NAV */
@@ -131,11 +132,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0px !important;
     border-radius: var(--radius) !important;
     border: none;
-    background: var(--accent-1);
+    background: var(--accent-2);
 }
 
 .card-body {
-    background-color: var(--accent-1);
+    background-color: var(--accent-2);
     padding-top: 0px;
     border-radius: 0px;
     border-bottom-left-radius: var(--radius) !important;
@@ -164,16 +165,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* COVER & GRADIENT */
+.container-cover {
+    overflow: hidden;
+}
+
 .cover {
     position: relative;
     padding: 0px;
     /* max-width: fit-content; */
     border-top-left-radius: var(--radius) !important;
     border-top-right-radius: var(--radius) !important;
-    background: var(--accent-1);
+    background: var(--accent-2);
 }
 
-.cover img {
+.cover > .container-cover > img {
     width: 100%;
     border-top-left-radius: var(--radius) !important;
     border-top-right-radius: var(--radius) !important;
@@ -348,11 +353,16 @@ button.buy:hover {
         white-space: nowrap
     }
 
+    .card-columns > div:first-of-type {
+        margin-top: 25px;
+    }
+
     .card {
         display: flex !important;
         flex-direction: row !important;
         height: 500px;
         max-height: fit-content;
+        margin-top: calc(65px/2);
     }
 
     .card-body {
@@ -377,6 +387,10 @@ button.buy:hover {
         border-bottom-left-radius: var(--radius) !important;
     }
 
+    .cover > .container-cover > img {
+        border-top-right-radius: 0px !important;
+    }
+
     #gradient {
         display: none;
         transform: translateY(0px);
@@ -387,9 +401,9 @@ button.buy:hover {
         width: fit-content;
     }
 
-    .cover img {
+    /* .cover > .container-cover > img {
         border-top-right-radius: 0px !important;
-    }
+    } */
 }
 
 @media (max-width: 576px) {
