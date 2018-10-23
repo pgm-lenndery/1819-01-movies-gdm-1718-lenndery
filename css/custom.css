@@ -167,13 +167,13 @@ h1, h2, h3, h4, h5, h6 {
 .cover {
     position: relative;
     padding: 0px;
-    max-width: fit-content;
+    /* max-width: fit-content; */
     border-top-left-radius: var(--radius) !important;
     border-top-right-radius: var(--radius) !important;
     background: var(--accent-1);
 }
 
-.cover > img {
+.cover img {
     width: 100%;
     border-top-left-radius: var(--radius) !important;
     border-top-right-radius: var(--radius) !important;
@@ -316,9 +316,6 @@ button.buy:hover {
 
 /***************************************/
 /* MEDIA QUERIES */
-
-
-
 @media only screen and (min-width: 576px) and (max-width: 992px) {
     .card-columns {
         column-count: 2;
@@ -367,10 +364,15 @@ button.buy:hover {
         column-count: 1;
     }
 
-    .card > .cover > .poster {
+    .container-cover {
+        max-height: 100%;
+        overflow: hidden;
+        width: 337px;
+    }
+
+    .card > .cover > .container-cover {
         height: 100%;
         max-height: 700px;
-        width: auto;
         border-top-right-radius: 0px !important;
         border-bottom-left-radius: var(--radius) !important;
     }
@@ -383,6 +385,10 @@ button.buy:hover {
 
     button.buy {
         width: fit-content;
+    }
+
+    .cover img {
+        border-top-right-radius: 0px !important;
     }
 }
 
